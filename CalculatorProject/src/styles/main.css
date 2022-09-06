@@ -6,8 +6,11 @@
   --height: 100%;
   --primary: #234;
   --secondary: #31475e;
+  --green: #3FB984;
   --white: #FFF;
+  --hover: #3D5875;
   --border: 1px solid #234;
+  --padding: 15px;
 }
 
 * 
@@ -27,7 +30,7 @@ body
 {
   max-width: 400px;
   margin: 50px auto;
-  padding: 10px;
+  padding: var(--padding);
 
   background-color: var(--primary);
   background-color: #234;
@@ -39,7 +42,7 @@ body
 .calculatorResult 
 {
   width: var(--width);
-  padding: 15px;
+  padding: var(--padding);
   margin: 15px auto;
 
   text-align: center;
@@ -71,5 +74,16 @@ body
     text-align: center;
 
     border: var(--border);
-    padding-top: 15px;
+    padding-top: var(--padding);
+}
+
+.calculatorBtn_elem:hover 
+{
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+.green
+{
+    background-color: var(--green);
 }
