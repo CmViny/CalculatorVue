@@ -1,0 +1,75 @@
+/* GENERAL */
+
+:root 
+{
+  --width: 100%;
+  --height: 100%;
+  --primary: #234;
+  --secondary: #31475e;
+  --white: #FFF;
+  --border: 1px solid #234;
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  width: var(--width);
+  height: var(--height);
+}
+
+.main
+{
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 10px;
+
+  background-color: var(--primary);
+  background-color: #234;
+  border: var(--border);
+  border-radius: 10px;
+}
+
+/* CALCULATOR RESULT */
+.calculatorResult 
+{
+  width: var(--width);
+  padding: 15px;
+  margin: 15px auto;
+
+  text-align: center;
+  color: var(--primary);
+  font-weight: bold;
+
+  background: var(--white);
+  border: var(--border);
+  border-radius: 25px;
+}
+
+/* CALCULATOR BTN */
+.calculatorBtn
+{
+  background-color: var(--secondary);
+
+  width: var(--width);
+  height: var(--height);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.calculatorBtn_elem
+{
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+
+    border: var(--border);
+    padding-top: 15px;
+}
